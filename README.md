@@ -8,15 +8,15 @@
 
 ## Show Untappd Ratings on product page instead of WooCommerce one's
 
-![Product Beer search](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-4.png)
+![Product Beer search](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-4.png)
 
-![Product ratings](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-7.png)
+![Product ratings](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-7.png)
 
 ## Add a Google Map Untappd Feed to your site
 
 To use Google maps it's required to enbale Google Javascript Maps API
 
-![Untappd Map](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-8.png)
+![Untappd Map](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-8.png)
 
 Easy way to add a map using a shortcode:
 
@@ -43,11 +43,11 @@ Easy way to add a map using a shortcode:
 | width | Map width. | "640px" |
 | zoom | Map zoom. | "4" |
 
-![Brewery Search](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-5.png)
+![Brewery Search](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-5.png)
 
 ## Add Ratings to Structured Data
 
-![Structured Data](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-6.png)
+![Structured Data](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-6.png)
 
 ### Configuration
 
@@ -55,7 +55,7 @@ To configure the plugin just go to WooCommerce->Settings Untappd Tab
 
 ### **Untappd API section**:
 
-![Untappd API](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-1.png)
+![Untappd API](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-1.png)
 
 * **Untappd API Client ID**: Your Client ID obtained from **Untappd** API Dashboard.
 * **Untappd API Client Secret**: Your Client Secret obtained from **Untappd** API Dashboard.
@@ -64,7 +64,7 @@ To configure the plugin just go to WooCommerce->Settings Untappd Tab
 * **Cache time**: This plugin utilizes temporarily cached data. Enter an integer representing the number of hours the cached data will last. Default is 3 hours.
 * **Show "Powered by Untappd" logo**: Enable to display the Untappd logo in the footer of Storefront-based themes. Default is disabled.
 
-![Untappd rattings](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-2.png)
+![Untappd rattings](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-2.png)
 
 ### **Untappd ratings configuration**:
 * **Use Untappd Ratings**: Override **WooCommerce** ratings system with **Untappd** ratings. Default is disabled.
@@ -73,7 +73,7 @@ To configure the plugin just go to WooCommerce->Settings Untappd Tab
 * **Display Total Ratings**: Show total ratings next to stars. Default is disabled.
 * **Structured Data**: Include **Untappd** ratings and check-in data in product structured data. Default is disabled.
 
-![Untappd MAP](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/main/assets/screenshot-3.png)
+![Untappd MAP](https://github.com/ChillCode/untappd-ratings-for-woocommerce/blob/development/assets/screenshot-3.png)
 
 ###  **Untappd map**:
 * **Cache Status**:  If cache fails, this option is disabled to prevent excessive connections to the **Untappd** API. Default is enabled.
