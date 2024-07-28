@@ -11,7 +11,7 @@
  * Plugin Name: Untappd Ratings for WooCommerce
  * Plugin URI: https://github.com/chillcode/untappd-ratings-for-woocommerce
  * Description: Connect your WooCommerce Store with Untappd
- * Version: 1.0.6
+ * Version: 1.0.7
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Chillcode
@@ -22,7 +22,7 @@
  * Domain Path: /i18n/languages/
  *
  * WC requires at least: 6.0.1
- * WC tested up to: 8.5.2
+ * WC tested up to: 9.1.2
  */
 
 // Exit if accessed directly.
@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
 define( 'URWC_PLUGIN_FILE', __FILE__ );
 define( 'URWC_PLUGIN_DIR', dirname( URWC_PLUGIN_FILE ) . DIRECTORY_SEPARATOR );
 define( 'URWC_NAME', 'Untappd Ratings for WooCommerce' );
-define( 'URWC_VERSION', '1.0.6' );
+define( 'URWC_VERSION', '1.0.7' );
 
 require_once URWC_PLUGIN_DIR . 'includes' . DIRECTORY_SEPARATOR . 'class-urwc-ratings.php';
 
@@ -49,6 +49,20 @@ require_once URWC_PLUGIN_DIR . 'includes' . DIRECTORY_SEPARATOR . 'class-urwc-ra
 function URWC_Ratings(): URWC_Ratings { //phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
 	return URWC_Ratings::instance();
 }
+
+/**
+ * HPOS compatibility.
+ *
+ * More info: https://developer.woocommerce.com/docs/hpos-extension-recipe-book/
+ */
+add_action(
+	'before_woocommerce_init',
+	function () {
+		if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
+	}
+);
 
 /**
  * Initialize the plugin.
